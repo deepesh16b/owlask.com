@@ -85,8 +85,8 @@
     padding: 7px;
   }
 
-  .navbar.container.navbar-brand {
-    position: relative;
-    bottom: 20px;
+  .navbar .navbar-brand {
+    padding: 0;
+    margin-top: -10px;
   }
 }
