@@ -14,7 +14,7 @@
     />
     <link
       rel="shortcut icon"
-      href="assets\images\logo-3.png"
+      href="assets\images\logo-1.png"
       type="image/x-icon"
     />
     <title>Posts</title>
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <link rel="stylesheet" href="assets/css/templatemo-stand-blog.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!--
 
 TemplateMo 551 Stand Blog
@@ -53,20 +54,12 @@ https://templatemo.com/tm-551-stand-blog
           <a
             class="navbar-brand"
             href="index.html"
-           
             ><img
               src="assets\images\logo-3.png"
               alt=""
-              style="
-                width: 70px;
-                position: relative;
-                bottom: 5px;
-                display: inline-block;
-              "
+              
             />
-            <span style="display: inline-block"
-              ><h2>Owlask<em>.</em>com</h2></span
-            ></a
+            </a
           >
           <button
             class="navbar-toggler"
@@ -344,7 +337,7 @@ https://templatemo.com/tm-551-stand-blog
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 ">
             <div class="sidebar">
               <div class="row">
                 <div class="col-lg-12">
@@ -361,45 +354,156 @@ https://templatemo.com/tm-551-stand-blog
                   </div>
                 </div>
                 <div class="col-lg-12">
-                  <div class="sidebar-item recent-posts">
-                    <div class="sidebar-heading">
+                  <div id="recent-post" class=" sidebar-item recent-posts">
+                    <div class="sidebar-heading blur">
                       <h2>Recent Posts</h2>
                     </div>
                     <div class="content">
                       <ul>
                         <li>
-                          <a href="post-details.html">
+                          <a
+                            class="recent-heading-a blur"
+                            href="#recent-post"
+                            onclick="toggle()"
+                          >
                             <h5>
                               Vestibulum id turpis porttitor sapien facilisis
                               scelerisque
                             </h5>
                             <span>May 31, 2020</span>
                           </a>
+                          <!-- -------------------
+                            <<<<< RECENT POP-UP 1 >>>>>>>>>
+                          ------------------------->
+                          <div class="popup-recents blog-post">
+                            <div class="blog-thumb">
+                              <img
+                                src="assets/images/blog-post-03.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="down-content">
+                              <!-- <span>Lifestyle</span> -->
+                              <h4>Best Template Website for HTML CSS</h4>
+                              <p>
+                                Stand Blog is a free HTML CSS template for your
+                                CMS theme. You can easily adapt or customize it
+                                for any kind of CMS or website builder. You are
+                                allowed to use it for your business. You are NOT
+                                allowed to re-distribute the template ZIP file
+                                on any template collection site for the download
+                                purpose. for more info. Thank you.
+                              </p>
+                              <a
+                                href="#blog-1"
+                                onclick="toggle()"
+                                style="
+                                  padding: 7px 15px;
+                                  color: #fff;
+                                  background-color: #f48840;
+                                "
+                                >Close</a
+                              >
+                            </div>
+                          </div>
                         </li>
                         <li>
-                          <a href="post-details.html">
+                          <a class="recent-heading-a blur"
+                          href="#recent-post"
+                          onclick="toggle()">
                             <h5>
                               Suspendisse et metus nec libero ultrices varius
                               eget in risus
                             </h5>
                             <span>May 28, 2020</span>
                           </a>
+                          <!-- -------------------
+                            <<<<<RECENT POP-UP 2 >>>>>>>>>
+                          ------------------------->
+                          <div class="popup-recents blog-post">
+                            <div class="blog-thumb">
+                              <img
+                                src="assets/images/blog-post-01.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="down-content">
+                              <!-- <span>Lifestyle</span> -->
+                              <h4>Best Template Website for HTML CSS</h4>
+                              <p>
+                                Stand Blog is a free HTML CSS template for your
+                                CMS theme. You can easily adapt or customize it
+                                for any kind of CMS or website builder. You are
+                                allowed to use it for your business. You are NOT
+                                allowed to re-distribute the template ZIP file
+                                on any template collection site for the download
+                                purpose. for more info. Thank you.
+                              </p>
+                              <a
+                                href="#blog-1"
+                                onclick="toggle()"
+                                style="
+                                  padding: 7px 15px;
+                                  color: #fff;
+                                  background-color: #f48840;
+                                "
+                                >Close</a
+                              >
+                            </div>
+                          </div>
                         </li>
+                        <!-- ------------------------------------------------------------ -->
                         <li>
-                          <a href="post-details.html">
+                          <a class="recent-heading-a blur"
+                          href="#recent-post"
+                          onclick="toggle()">
                             <h5>
                               Swag hella echo park leggings, shaman cornhole
                               ethical coloring
                             </h5>
                             <span>May 14, 2020</span>
                           </a>
+                          <!-- -------------------
+                            <<<<< RECENT POP-UP 3 >>>>>>>>>
+                          ------------------------->
+                          <div class="popup-recents blog-post">
+                            <div class="blog-thumb">
+                              <img
+                                src="assets/images/blog-post-02.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="down-content">
+                              <!-- <span>Lifestyle</span> -->
+                              <h4>Best Template Website for HTML CSS</h4>
+                              <p>
+                                Stand Blog is a free HTML CSS template for your
+                                CMS theme. You can easily adapt or customize it
+                                for any kind of CMS or website builder. You are
+                                allowed to use it for your business. You are NOT
+                                allowed to re-distribute the template ZIP file
+                                on any template collection site for the download
+                                purpose. for more info. Thank you.
+                              </p>
+                              <a
+                                href="#blog-1"
+                                onclick="toggle()"
+                                style="
+                                  padding: 7px 15px;
+                                  color: #fff;
+                                  background-color: #f48840;
+                                "
+                                >Close</a
+                              >
+                            </div>
+                          </div>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
-                  <div class="sidebar-item categories">
+                  <div class="sidebar-item categories blur">
                     <div class="sidebar-heading">
                       <h2>Categories</h2>
                     </div>
@@ -416,7 +520,7 @@ https://templatemo.com/tm-551-stand-blog
                   </div>
                 </div>
                 <div class="col-lg-12">
-                  <div class="sidebar-item tags">
+                  <div class="sidebar-item tags blur  ">
                     <div class="sidebar-heading">
                       <h2>Tag Clouds</h2>
                     </div>
@@ -470,7 +574,7 @@ https://templatemo.com/tm-551-stand-blog
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/accordions.js"></script>
-
+    <script src="assets\js\script.js"></script>
     <script language="text/Javascript">
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t) {
