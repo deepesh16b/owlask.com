@@ -34,6 +34,11 @@
   padding: 0 auto;
 }
 
+.navbar .navbar-brand {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
 @media (max-width: 62em) {
   .blur.active {
     filter: blur(10px);
@@ -71,12 +76,17 @@
     padding: 0 auto;
   }
 
-  .blog-posts .down-content p{
+  .blog-posts .down-content p {
     line-height: 24px;
     margin: 0 0 7px 0;
     padding: 7px 0;
   }
-  .popup .down-content{
-    padding:7px;
+  .popup .down-content {
+    padding: 7px;
+  }
+
+  .navbar.container.navbar-brand {
+    position: relative;
+    bottom: 20px;
   }
 }
