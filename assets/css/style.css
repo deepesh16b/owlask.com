@@ -1,0 +1,35 @@
+.blur.active {
+  filter: blur(10px);
+}
+
+.popup {
+  position: fixed;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  height: 98vh;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  filter: blur(0px);
+}
+
+.popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 1000000;
+  filter: blur(0px);
+  overflow: hidden;
+}
+
+.popup img {
+  /* width: 80%; */
+  height: 280px;
+  padding: 0 auto;
+}
