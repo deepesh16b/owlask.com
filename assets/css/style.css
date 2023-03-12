@@ -38,6 +38,51 @@
   margin-top: 0;
   padding-bottom: 0;
 }
+.navbar img {
+  height: 65px;
+  position: relative;
+  bottom: 5px;
+  display: inline-block;
+}
+
+.popup-recents{
+  position: fixed;
+  top: 50vh;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 85vh;
+  padding: 40px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  filter: blur(0px);
+  z-index: 1000000;
+}
+.popup-recents.active {
+  top: 55vh;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 100000000;
+  filter: blur(0px);
+  overflow: hidden;
+}
+.popup-recents img {
+  /* width: 80%; */
+  height: 200px;
+  padding: 0 auto;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 62em) {
   .blur.active {
@@ -46,11 +91,11 @@
 
   .popup {
     position: fixed;
-    top: 40vh;
+    top: 44vh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 80%;
+    height: 76%;
     padding: 20px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     background: #fff;
@@ -61,7 +106,7 @@
   }
 
   .popup.active {
-    top: 50%;
+    top: 54%;
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
@@ -87,6 +132,45 @@
 
   .navbar .navbar-brand {
     padding: 0;
-    margin-top: -10px;
+    margin-top: -5px;
+  }
+
+  .popup-recents{
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 78vh;
+    padding: 40px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    filter: blur(0px);
+    z-index: 1000000;
+  }
+  .popup-recents.active {
+    top: 55vh;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 100000000;
+    filter: blur(0px);
+    overflow: hidden;
+  }
+  .popup-recents img {
+    /* width: 80%; */
+    height: 150px;
+    padding: 0 auto;
+  }
+  .popup-recents .down-content p {
+    line-height: 24px;
+    margin: 0 0 7px 0;
+    padding: 7px 0;
+  }
+  .popup-recents .down-content {
+    padding: 7px;
   }
 }
